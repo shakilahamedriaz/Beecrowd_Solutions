@@ -1,14 +1,17 @@
 #include<stdio.h>
 int main(){
 
-int M,N,j,k,i,s=0;
-for(i=0;i<=20 ;i++){
-    scanf("%d %d",&M,&N);
-    for(j=0,k=0; j<=M,k<=N; j=j*s,k=k*s){
-            printf("%d",M+N);
+int i,j,M,N,sum=1,sum2=1,total;
+scanf("%d%d",&M,&N);
 
-    }
+for(i=1,j=1; i<=M,j<=N; i++,j++){
+
+    sum*=i;
+    sum2*=j;
+
 }
+total=sum+sum2;
+printf("%d\n",total);
 
 return 0;
 }
