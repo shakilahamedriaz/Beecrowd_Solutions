@@ -1,20 +1,22 @@
 
-
 #include<stdio.h>
 int main(){
 
-int i,x,j,temp;
-int aray[10];
+int i,x,j,temp,n;
 
-for(i=0; i<10; i++){
-   scanf("%d",&x);
+int aray[100];
+printf("Enter the size of array : ");
+scanf("%d",&n);
+
+for(i=0; i<n; i++){
+   scanf("%d",&array[i]);
 }
 
-for(i=0; i<10; i++){
-    for(j=i+1; j<5; j++){
+for(i=0; i<n; i++){
+    for(j=i+1; j<n; j++){
 
 
-        if(a[i]<a[j]){
+        if(a[i]>a[j]){
 
 
             temp=a[i];
@@ -28,7 +30,7 @@ for(i=0; i<10; i++){
     }
 }
 
-printf("Menor valor:%d\n",a[9]");
+printf("Menor valor:%d\n",a[0]");
 
 
 
