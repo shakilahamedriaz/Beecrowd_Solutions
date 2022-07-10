@@ -1,19 +1,27 @@
 #include<stdio.h>
 
-int main(){
+int main()
+{
 
-int n;
-printf("Enter a number : ");
-scanf("%d",&n);
+    int n;
+    for(;; )
+    {
+        scanf("%d",&n);
 
-if(n==2002){
+        if(n!=2002)
+        {
+            printf("Senha Invalida\n");
+        }
+        else
+        {
 
-    printf("Acesso Permitido\n");
-}
-else{
-    printf("Senha Invalida\n");
-}
+            printf("Acesso Permitido\n");
+
+            break;
+        }
+
+    }
 
 
-return 0;
+    return 0;
 }
