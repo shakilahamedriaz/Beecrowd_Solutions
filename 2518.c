@@ -1,21 +1,18 @@
 #include<stdio.h>
-#include<math.h>
+
 
 int main(){
 
-    int N,H,C,L,x,x1,y;
-    scanf("%d",&N);
-    scanf( ("%d %d %d",&H,&C,&L) !=EOF);
+    int n,h,c,l,x;
+    while(
+    scanf("%d %d %d %d",&n,&h,&c,&l)
+){
 
-   x=sqrt(H*H + C*C);
 
-    x1= x*N;
-    y=x1*L;
+   printf("%.4f\n", (n * 1.0 * sqrt(c*c + h*h) * l) / 10000.0);
 
-   float y1=y/10000.0;
 
-    printf("%.4f\n",y1);
-
+}
 
     return 0;
 }
