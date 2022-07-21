@@ -1,24 +1,24 @@
 #include<stdio.h>
-int main()
-{
+int main(){
 
-    int t;
-    scanf("%d",&t);
+int n;
+scanf("%d",&n);
 
-    for(int i=1; i<=t; i++)
-    {
+for(int i=1; i<=n; i++){
 
-        int a[12];
-        int n;
-        scanf("%d",&n);
-        for(int j=0; j<n; j++)
-        {
+    int a[12];
+    int N;
+    scanf("%d",&N);
 
-            scanf("%d",a[j]);
-        }
+    for(int j=0; j<N; j++){
 
-        printf("Case %d: %d\n",i,a[n/2]);
+        scanf("%d",&a[j]);
     }
 
-    return 0;
+    printf("Case %d: %d\n",i,a[N/2]);
+}
+
+
+return 0;
+
 }
