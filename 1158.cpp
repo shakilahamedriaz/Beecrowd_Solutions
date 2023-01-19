@@ -1,26 +1,37 @@
 #include<bits/stdc++.h>
 using namespace std;
-int main(){
 
-int t;
-cin>>t;
-int a,b;
-int sum=0;
-while(t--){
+int main()
+{
+    int n,x,y,sum=0;
+    cin>>n;
 
-    cin>>a>>b;
+    while(n--){
+            cin>>x>>y;
 
-    for(int i=a; i<=b; i++){
+          if(x%2==0)x++;
+
+        for(int i=0; i<y; i++){
+
+                sum+=x;
+
+                x+=2;
 
 
-    if(i%2==0){
+        }
+
+        cout<<sum<<endl;
 
 
-        sum= sum+i;
+    sum=0;
+
+
     }
-    }
- cout<<sum<<endl;
-}
 
-return 0;
+
+
+
+
+
+    return 0;
 }
