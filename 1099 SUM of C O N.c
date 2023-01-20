@@ -9,18 +9,24 @@ for(int i=1; i<=n; i++){
     scanf("%d %d",&x,&y);
 
     if(x<y){
-        for(int j=x; j<y; j++){
+        for(int j=x+1; j<y; j++){
             if(j%2 !=0){
 
                 sum+=j;
             }
         }
-    }else{
-         for(int j=y; j<x; j++){
-            if(j%2 !=0){
+    }else if(x==y){
+
+     printf("0\n");
+
+    }
+
+    else{
+         for(int k=y+1; k<x; k++){
+            if(k%2 !=0){
 
 
-                sum+=j;
+                sum+=k;
             }
         }
 
