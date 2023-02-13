@@ -10,6 +10,7 @@ int main()
 
     scanf("%d",&n);
     while(n!=0 && n<1000){
+        
     if(n>=500){
         if(n>=900 && n<1000){
             printf("CM");
