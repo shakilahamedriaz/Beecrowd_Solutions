@@ -1,25 +1,21 @@
-#include<bits/stdc++.h>
-using namespace std;
-
+#include<stdio.h>
+#include<string.h>
 int main()
-{   
-
-    int n;
-    cin>>n;
-    while(n--)
+{
+    int i,j,k=1,m,n,p;
+    char a[1001],b[1001],c[1001];
+    scanf("%d",&m);
+    while(m--)
     {
-        long long int a,b;
-        cin >>a >>b;
+        scanf("%s %s",&a,&b);
+        n=strlen(a);
+        p=strlen(b);
+        if(n<p){
 
-        string m,n;
-        m=to_string(a);
-        n=to_string(b);
-
-        if(m.size()<n.size()) cout<< "nao encaixa"<<endl;
-        else
-        {
-            
-           for(i=(n-p),j=0;i<n;i++,j++){
+            printf("nao encaixa\n");
+        }
+        else{
+            for(i=(n-p),j=0;i<n;i++,j++){
                 c[j]=a[i];
             }
             c[j]='\0';
@@ -30,7 +26,6 @@ int main()
             else{
                 printf("nao encaixa\n");
             }
-         
         }
     }
     return 0;

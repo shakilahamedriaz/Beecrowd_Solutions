@@ -9,7 +9,7 @@ int main()
 
     cin >> palavra1 >> palavra2;
     
-    cout<<palavra1.compare(palavra2)<<endl;
+    
     if (palavra1.compare(palavra2) > 0)
     {
         cout << palavra2 << '\n';
