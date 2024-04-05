@@ -12,6 +12,7 @@ int main()
 
         if (len >= 6 && len <= 32)
         {
+            
             number = 0;
             upper = 0;
             lower = 0;

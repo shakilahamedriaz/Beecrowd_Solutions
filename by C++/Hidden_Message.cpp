@@ -1,29 +1,24 @@
 #include <iostream>
-#include <string>
-
+#include <cstring>
 using namespace std;
 
 int main() {
-    int t;
-    cin >> t;
-    cin.ignore(); // Ignore the newline character after reading t
-
-    while (t--) {
-        string s;
-        getline(cin, s); // Read the entire line including spaces
-
-        string ans = "";
-
-        // Loop through the string to extract the hidden message
-        for (int i = 0; i < s.length(); i++) {
-            // If current character is not a space and the previous character is a space (or it's the first character)
-            if (s[i] != ' ' && (i == 0 || s[i - 1] == ' ')) {
-                ans += s[i]; // Add the current character to the hidden message
+    int a, b, j;
+    char x[100], y[100];
+    cin >> a;
+    cin.ignore(); // to clear input buffer
+    while (a--) {
+        cin.getline(x, 100);
+        j = 0;
+        b = strlen(x);
+        for (int i = 0; i < b; i++) {
+            if (((x[i] != ' ') && (x[i - 1] == ' ')) || ((i == 0 && x[i] != ' '))) {
+                y[j] = x[i];
+                j++;
             }
         }
-
-        cout << ans << endl;
+        y[j] = '\0';
+        cout << y << endl;
     }
-
     return 0;
 }
